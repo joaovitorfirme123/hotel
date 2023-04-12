@@ -1,0 +1,86 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    justify-content: center;
+    
+  }
+  
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+#payment {
+    background-color: #F2F2F2;
+    padding: 20px;
+    margin-top: 50px;
+  }
+  
+  #payment h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  #payment form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #payment label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  #payment input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+  }
+  
+  #payment button[type="submit"] {
+    background-color: #008080;
+    color: #FFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  #payment button[type="submit"]:hover {
+    background-color: #005757;
+  }
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+
+  }
+  
+
+  
