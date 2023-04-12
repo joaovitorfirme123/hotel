@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to top, #a7a7a7, #dcdcdc);
+}
 /* Estilos para o header */
 header {
     background-color: #333;
