@@ -1,107 +1,175 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: linear-gradient(to top, #a7a7a7, #dcdcdc);
-  }
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    justify-content: center;
-    
-  }
-  
-  header nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-  }
-  
-  header nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  header h1 {
-    margin: 0;
-    font-size: 36px;
-  }
-  
-#payment {
-    background-color: #F2F2F2;
-    padding: 20px;
-    margin-top: 50px;
-  }
-  
-  #payment h2 {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-  }
-  
-  #payment form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #payment label {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
-  #payment input[type="number"] {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 1.2em;
-  }
-  #payment input[type="text"] {
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    font-size: 1.2em;
-  }
-  
-  #payment label[for="titular_reserva"] {
-    margin-bottom: 10px;
-  }
-  
-  
-  
-  #payment button[type="submit"] {
-    background-color: #008080;
-    color: #FFF;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.2em;
-    cursor: pointer;
-  }
-  
-  #payment button[type="submit"]:hover {
-    background-color: #005757;
-  }
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-  }
-  
-  
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(to top, #a7a7a7, #dcdcdc);
+}
 
-  
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  justify-content: center;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+#payment {
+  background-color: #F2F2F2;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+#payment h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#payment form {
+  display: flex;
+  flex-direction: column;
+}
+
+#payment label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#payment input[type="number"],
+#payment input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+#payment label[for="titular_reserva"] {
+  margin-bottom: 10px;
+}
+
+#payment .checkin-out {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#payment .checkin-out label {
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+#payment .checkin-out input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.2em;
+}
+
+#payment button[type="submit"] {
+  background-color: #008080;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#payment button[type="submit"]:hover {
+  background-color: #005757;
+}
+#checkin-out {
+  background-color: #F2F2F2;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+#checkin-out h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+#checkin-out form {
+  display: flex;
+  flex-direction: column;
+}
+
+#checkin-out label {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+#checkin-out input[type="date"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+#checkin-out input[type="time"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+#checkin-out label[for="data_checkin"] {
+  margin-bottom: 10px;
+}
+
+#checkin-out button[type="submit"] {
+  background-color: #008080;
+  color: #FFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+#checkin-out button[type="submit"]:hover {
+  background-color: #005757;
+}
+
+#n_quarto[type="number"],
+#n_quarto[type="text"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}

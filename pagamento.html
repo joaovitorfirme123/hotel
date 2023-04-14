@@ -11,43 +11,62 @@
     <header>
         <h1>Hoteis Company</h1>
         <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="sobre.html">Sobre Nós</a></li>
-            <li><a href="contato.html">Contato</a></li>
-          </ul>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre Nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
         </nav>
-        
-      </header>
+    </header>
 
-      <section id="payment">
+    <section id="payment">
         <h2>Pagamento</h2>
         <form action="processa_pagamento.php" method="POST">
-          <div>
-            <label for="nome">Nome do titular da reserva:</label>
-            <input type="text" id="nome" name="nome" required>
-          </div>
-          <div>
-            <label for="numero_quarto">Número do quarto:</label>
-            <input type="number" id="numero_quarto" name="numero_quarto" required>
-          </div>
-          <div>
-            <label for="quantidade_dias">Quantidade de dias:</label>
-            <input type="number" id="quantidade_dias" name="quantidade_dias" required>
-          </div>
-          <div>
-            <label for="numero_pessoas">Número de pessoas:</label>
-            <input type="number" id="numero_pessoas" name="numero_pessoas" required>
-          </div>
-          <div>
-            <button type="submit">Pagar</button>
-          </div>
+            <div>
+                <label for="nome">Nome do titular da reserva:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div>
+                <label for="numero_quarto">Número do quarto:</label>
+                <input type="number" id="numero_quarto" name="numero_quarto" required>
+            </div>
+            <div>
+                <label for="quantidade_dias">Quantidade de dias:</label>
+                <input type="number" id="quantidade_dias" name="quantidade_dias" required>
+            </div>
+            <div>
+                <label for="numero_pessoas">Número de pessoas:</label>
+                <input type="number" id="numero_pessoas" name="numero_pessoas" required>
+            </div>
+            <div>
+                <button type="submit">Pagar</button>
+            </div>
         </form>
-      </section>
-    
-        <footer>
-<p>© 2023 Hoteis Company. Todos os direitos reservados.</p>
+    </section>
 
-  </footer>
+    <section id="checkin-out">
+        <h2>Check-in / Check-out</h2>
+        <form action="processa_checkin_checkout.php" method="POST">
+            <div>
+                <label for="n_numero">Número do quarto:</label>
+                <input type="number" id="n_quarto" name="n_quarto" required>
+            </div>
+            <div>
+                <label for="data_checkin">Data de check-in:</label>
+                <input type="date" id="data_checkin" name="data_checkin" required>
+            </div>
+            <div>
+                <label for="data_checkout">Data de check-out:</label>
+                <input type="date" id="data_checkout" name="data_checkout" required>
+            </div>
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2023 Hoteis Company. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
