@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato e cancelamento de Reserva</title>
+    <link rel="stylesheet" href="cancelamento.css">
+</head>
+<body>
+    <header>
+        <h1>Hoteis Company</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre nós</a></li>
+            <li><a href="hoteis.html">Nossos Hotéis</a></li>
+          </ul>
+        </nav>
+      </header> 
+    <section id="contact">
+        <h2>Contato</h2>
+        <div class="contact-info">
+          <div>
+            <h3>E-mail</h3>
+            <p><a href="mailto:contato@hoteiscompany.com">contato@hoteiscompany.com</a></p>
+          </div>
+          <div>
+            <h3>Telefone</h3>
+            <p>(11)1234-5678</p>
+          </div>
+          <div>
+            <h3>Endereço</h3>
+            <p>Rua dos Bobos, 0 - Osasco - SP</p>
+          </div>
+        </div>
+        <hr>
+        <h2>Cancelar Reserva</h2>
+        <form action="processa_cancelamento.php" method="POST">
+          <div>
+            <label for="nome">Nome do titular da reserva:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div>
+            <label for="numero_quarto">Número do quarto:</label>
+            <input type="number" id="numero_quarto" name="numero_quarto" required>
+          </div>
+          <div>
+            <button type="submit">Cancelar Reserva</button>
+          </div>
+        </form>
+      </section>
+      
+</body>
+</html>
